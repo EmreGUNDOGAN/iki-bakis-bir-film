@@ -88,21 +88,21 @@
 @media(min-width:1200px) {
   #ibf-home .ibf-owned-about { font-size:21px; }
   #ibf-home .ibf-owned-about .ibf-ref-reviewer p { font-size:19px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-wrap { width:calc(100% - 96px); max-width:1250px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-header { min-height:92px; padding-inline:32px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-brand { font-size:26px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-logo { width:78px; height:63px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-logo>span { width:48px; height:44px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-logo>span+span { left:28px; top:19px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-nav { font-size:18px; gap:40px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-search-toggle svg { width:28px; height:28px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-breadcrumb { font-size:16px; margin-bottom:30px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-page-main { padding-left:22px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer-brand { font-size:25px; gap:17px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer-brand .ibf-logo { width:78px; height:63px; transform:none; margin-right:0; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer>p { font-size:14px; line-height:50px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer nav { font-size:16px; gap:26px; }
-  #ibf-home:has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-seats { width:58px; height:46px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-wrap { width:calc(100% - 96px); max-width:1250px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-header { min-height:92px; padding-inline:32px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-brand { font-size:26px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-logo { width:78px; height:63px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-logo>span { width:48px; height:44px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-logo>span+span { left:28px; top:19px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-nav { font-size:18px; gap:40px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-search-toggle svg { width:28px; height:28px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-breadcrumb { font-size:16px; margin-bottom:30px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-page-main { padding-left:22px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer-brand { font-size:25px; gap:17px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer-brand .ibf-logo { width:78px; height:63px; transform:none; margin-right:0; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer>p { font-size:14px; line-height:50px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-footer nav { font-size:16px; gap:26px; }
+  #ibf-home:not(.ibf-cinema-inner):has(.ibf-owned-contact[data-design="approved-reference"]) .ibf-seats { width:58px; height:46px; }
 }
 @media(max-width:1000px) and (min-width:761px) {
   #ibf-home [data-design="approved-reference"] { font-size:17px; }

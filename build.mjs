@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const config=JSON.parse(read('site.json'));
-const styles=Object.fromEntries(['home','inner','artwork','review','archive','owned-pages','cinema'].map(n=>[n,read('styles/'+n+'.css')]));
+const styles=Object.fromEntries(['home','inner','artwork','review','archive','owned-pages','cinema','refinements'].map(n=>[n,read('styles/'+n+'.css')]));
 const templates=Object.fromEntries(['home','shell'].map(n=>[n,read('templates/'+n+'.html')]));
 const home=read('scripts/home.js');
 const native=read('scripts/native.js')
@@ -25,7 +25,7 @@ const js=`/* İki Bakış Bir Film — GitHub managed runtime. */
  if(!original)return;
  const isNative=original.hasAttribute('data-native-bridge');
  const css=document.createElement('style');css.id='ibf-github-styles';
- css.textContent=replace((isNative?styles.inner:styles.home)+'\\n'+styles.artwork+'\\n'+styles.review+'\\n'+styles.archive+'\\n'+styles['owned-pages']+'\\n'+styles.cinema);
+ css.textContent=replace((isNative?styles.inner:styles.home)+'\\n'+styles.artwork+'\\n'+styles.review+'\\n'+styles.archive+'\\n'+styles['owned-pages']+'\\n'+styles.cinema+'\\n'+styles.refinements);
  document.head.append(css);
  const holder=document.createElement('template');holder.innerHTML=replace(isNative?templates.shell:templates.home);
  const frame=holder.content.firstElementChild;

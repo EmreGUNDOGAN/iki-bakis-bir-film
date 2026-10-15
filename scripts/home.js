@@ -44,14 +44,15 @@ window.IBF_HOME_CONFIG.posts.forEach(p=>{p.image=p.image.replace('@@ASSET_BASE@@
     article.append(picture, heading, meta);if(ratings.childNodes.length)article.append(ratings);article.append(read); return article;
   }
   function archivePosts() {
-    if (selected !== 'all') return posts.filter(post => matchesGenre(post, selected)).slice(0, 5);
+    if (selected !== 'all') return posts.filter(post => matchesGenre(post, selected));
     const pinned = config.archiveOrder.map(title => posts.find(post => normalize(post.title) === normalize(title))).filter(Boolean);
     const seen = new Set(pinned.map(post => post.url));
-    return [...pinned, ...posts.filter(post => !seen.has(post.url))].slice(0, 5);
+    return [...pinned, ...posts.filter(post => !seen.has(post.url))];
   }
   function renderArchive(announce) {
     const visible = archivePosts();
     grid.replaceChildren(...visible.map(card)); empty.hidden = visible.length > 0;
+    rail(grid,'Film arşivi',5)();
     if (announce) status.textContent = `${selected === 'all' ? 'Tüm türler' : selected}: ${visible.length} film gösteriliyor.`;
   }
   function renderShelves() {
@@ -59,7 +60,7 @@ window.IBF_HOME_CONFIG.posts.forEach(p=>{p.image=p.image.replace('@@ASSET_BASE@@
       const ordered=JSON.parse(section.dataset.order||'[]');
       const available=posts.filter(post=>matchesGenre(post,section.dataset.ibfShelf));
       const first=ordered.map(title=>available.find(p=>p.title===title)).filter(Boolean);
-      const items=[...first,...available.filter(p=>!first.includes(p))].slice(0,5);
+      const items=[...first,...available.filter(p=>!first.includes(p))];
       section.hidden = items.length === 0;
       const shelfGrid=section.querySelector('.ibf-film-grid');shelfGrid.replaceChildren(...items.map(card));shelfGrid.style.setProperty('--ibf-card-count',Math.min(items.length,5));
       const note=section.querySelector('.ibf-collection-note');
@@ -72,8 +73,41 @@ window.IBF_HOME_CONFIG.posts.forEach(p=>{p.image=p.image.replace('@@ASSET_BASE@@
         content.style.setProperty('--ibf-left',items.length+'fr');
         content.style.setProperty('--ibf-right',(5-items.length)+'fr');
       }
+      rail(shelfGrid,section.dataset.ibfShelf+' filmleri',Math.max(1,Math.min(items.length,5)))();
     });
   }
+  const rails=new WeakMap();
+  let railId=0;
+  function rail(track,label,columns){
+    if(rails.has(track)){track.parentElement.style.setProperty('--ibf-rail-columns',columns);track.scrollLeft=0;return rails.get(track);}
+    const wrap=document.createElement('div');wrap.className='ibf-carousel';
+    wrap.style.setProperty('--ibf-rail-columns',columns);
+    track.before(wrap);wrap.append(track);track.classList.add('ibf-carousel-track');
+    track.id ||= 'ibf-film-rail-'+(++railId);track.tabIndex=0;
+    track.setAttribute('role','region');track.setAttribute('aria-label',label+' — kaydırılabilir film listesi');
+    const previous=document.createElement('button'),next=document.createElement('button');
+    previous.type=next.type='button';previous.className='ibf-rail-arrow ibf-rail-previous';next.className='ibf-rail-arrow ibf-rail-next';
+    previous.textContent='‹';next.textContent='›';
+    previous.setAttribute('aria-label',label+': önceki filmler');next.setAttribute('aria-label',label+': sonraki filmler');
+    previous.setAttribute('aria-controls',track.id);next.setAttribute('aria-controls',track.id);
+    const position=document.createElement('p');position.className='ibf-rail-position';position.setAttribute('aria-live','polite');
+    wrap.append(previous,next,position);
+    const update=()=>{
+      const overflow=track.scrollWidth>track.clientWidth+2;
+      previous.hidden=next.hidden=position.hidden=!overflow;
+      previous.disabled=track.scrollLeft<2;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2;
+      const cards=[...track.children];const bounds=track.getBoundingClientRect();
+      const visible=cards.map((card,index)=>({index,rect:card.getBoundingClientRect()})).filter(({rect})=>rect.right>bounds.left+8&&rect.left<bounds.right-8);
+      position.textContent=visible.length?`${visible[0].index+1}–${visible.at(-1).index+1} / ${cards.length} film`:'';
+    };
+    const move=direction=>track.scrollBy({left:direction*track.clientWidth*.85,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+    previous.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+    track.addEventListener('keydown',event=>{if(event.target!==track)return;if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();if(event.key==='Home'||event.key==='End')track.scrollTo({left:event.key==='Home'?0:track.scrollWidth,behavior:'instant'});else move(event.key==='ArrowLeft'?-1:1);}});
+    let pending=false;track.addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(()=>{update();pending=false;});}},{passive:true});
+    const observer=new ResizeObserver(update);observer.observe(track);
+    rails.set(track,update);return update;
+  }
+  renderArchive(false);renderShelves();
   filters.forEach(button => button.addEventListener('click', () => {
     selected = button.dataset.ibfFilter;
     filters.forEach(filter => { const active = filter === button; filter.classList.toggle('is-active', active); filter.setAttribute('aria-pressed', String(active)); });

@@ -22,6 +22,7 @@ Bu depo, mevcut Blogger temasının tasarımını ve etkileşimlerini günceller
 | Biz Kimiz ve İletişim görünümü | `styles/owned-pages.css` |
 | Arama, türler ve film arşivi | `scripts/native.js`, `styles/archive.css` |
 | Ana sayfa filtreleri ve film rafları | `scripts/home.js` |
+| Sıkı kart aralıkları, kaydırma okları ve iç sayfaların sinema görünümü | `styles/refinements.css` (son stil katmanı) |
 
 Yeni film yazmak için **Blogger → Yayınlar**, Biz Kimiz/İletişim metinleri için **Blogger → Sayfalar** kullanılır. Bu depoya yazı eklemek gerekmez. İncelemelerde mevcut iki yazar bölümü ve puan biçimi kullanılmaya devam edilir.
 
