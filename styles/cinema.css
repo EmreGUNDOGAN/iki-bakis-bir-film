@@ -238,6 +238,20 @@ body.ibf-home { background:#f5efe5!important; color:#292323!important; }
  #ibf-home.ibf-cinema-inner .ibf-header { padding-inline:8px; }
  #ibf-home.ibf-cinema-inner .ibf-brand-name { max-width:150px;white-space:normal;line-height:1.2; }
 }
+/* Ticket starts beside the introduction, as in the approved composition. */
+@media(min-width:761px) {
+ #ibf-home.ibf-cinema-home .ibf-stage { display:grid;grid-template-columns:minmax(0,3.6fr) minmax(220px,1fr);column-gap:28px; }
+ #ibf-home.ibf-cinema-home .ibf-intro { grid-column:1;grid-row:1;min-width:0; }
+ #ibf-home.ibf-cinema-home .ibf-showcase { display:contents; }
+ #ibf-home.ibf-cinema-home .ibf-featured { grid-column:1;grid-row:2;min-width:0; }
+ #ibf-home.ibf-cinema-home .ibf-ticket { grid-column:2;grid-row:1 / span 2;align-self:start; }
+ #ibf-home.ibf-cinema-home .ibf-intro-note { flex-shrink:0;font-size:12px; }
+}
+@media(min-width:761px) and (max-width:1150px) {
+ #ibf-home.ibf-cinema-home .ibf-stage { grid-template-columns:minmax(0,3.4fr) minmax(180px,1fr);column-gap:20px; }
+ #ibf-home.ibf-cinema-home .ibf-intro { flex-direction:column;align-items:flex-start;gap:8px; }
+ #ibf-home.ibf-cinema-home .ibf-intro-note br { display:none; }
+}
 @media(prefers-reduced-motion:no-preference) {
  #ibf-home.ibf-cinema-home :is(.ibf-ticket-button,.ibf-solid-button,.ibf-filters button) { transition:background-color .18s,color .18s; }
 }
