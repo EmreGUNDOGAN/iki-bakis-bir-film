@@ -1,0 +1,51 @@
+/* Reference-approved props, kept outside all reading and interaction areas. */
+#ibf-home .ibf-night-scene{position:relative;min-width:0;min-height:370px;display:flex;align-items:center;padding:28px 0 30px}
+#ibf-home .ibf-night-popcorn{position:absolute;right:-10px;bottom:4px;width:42%;height:auto;pointer-events:none;z-index:0}
+#ibf-home .ibf-night-note{position:relative;z-index:1;width:85%;box-sizing:border-box;transform:rotate(-3deg);padding:32px 28px 28px;margin:0 0 0 5px}
+#ibf-home .ibf-night-note h3{font-size:27px}
+#ibf-home .ibf-night-note p{font-size:15px;line-height:1.65;max-width:340px;padding-right:12px}
+#ibf-home .ibf-about{grid-template-columns:1fr 1fr;overflow:hidden}
+#ibf-home .ibf-about-copy{position:relative;isolation:isolate;min-height:335px;padding:30px 35px 100px;box-sizing:border-box}
+#ibf-home .ibf-about-copy h2,#ibf-home .ibf-about-copy p,#ibf-home .ibf-about-copy a{position:relative;z-index:2}
+#ibf-home .ibf-about-copy h2{font-size:40px;max-width:430px}
+#ibf-home .ibf-about-reel{position:absolute;width:58%;height:auto;right:0;bottom:-20px;z-index:1;pointer-events:none}
+#ibf-home .ibf-about-image{height:100%;max-height:none;min-height:335px;object-fit:cover}
+/* Film opening: the real poster, compact facts and two personal tickets. */
+#ibf-home .ibf-review-masthead{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:210px minmax(0,1fr);gap:38px;align-items:center;padding:32px 38px;margin:0 0 28px;background:#251b1b;border-bottom:3px solid #b98c4a;color:#faf1df}
+#ibf-home .ibf-review-masthead:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(36,20,22,.96),rgba(58,24,29,.92) 55%,rgba(36,20,22,.76))}
+#ibf-home .ibf-review-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:blur(12px);opacity:.65;z-index:-2;transform:scale(1.06)}
+#ibf-home .ibf-review-masthead .ibf-review-poster{width:100%;margin:0!important;max-width:none;filter:drop-shadow(0 10px 18px #0006)}
+#ibf-home .ibf-review-masthead .ibf-review-poster img{display:block;width:100%;height:auto;max-height:315px;object-fit:contain;border:5px solid #f2e5cf;box-sizing:border-box}
+#ibf-home .ibf-review-masthead .ibf-page-heading{background:none;border:0;padding:0;margin:0;color:#faf1df;min-width:0}
+#ibf-home .ibf-prose .ibf-review-masthead h1{color:#fff3df!important;font-size:clamp(30px,3.5vw,48px)!important;line-height:1.15!important;margin:10px 0 12px!important;letter-spacing:-1.3px}
+#ibf-home .ibf-review-kicker{color:#d8b77c;font-size:11px;letter-spacing:3px;margin:0 0 8px!important}
+#ibf-home .ibf-review-date{color:#cdbdac;font-size:12px}
+#ibf-home .ibf-review-facts{display:flex;flex-wrap:wrap;gap:8px 18px;border:0;padding:16px 0 7px;margin:0}
+#ibf-home .ibf-review-facts p{font-size:13px!important;line-height:1.4;margin:0!important;color:#eee0ce}
+#ibf-home .ibf-review-masthead .ibf-review-imdb{display:inline-block;color:#e5c891!important;font-size:12px;margin:0 0 18px;border-color:#a48a61}
+#ibf-home .ibf-review-score-tickets{display:flex;flex-wrap:wrap;gap:12px}
+#ibf-home .ibf-review-score-ticket{position:relative;display:grid;grid-template-columns:1fr auto;gap:5px 20px;min-width:150px;padding:12px 17px;background:#efe1c9;color:#472b2a!important;border-left:4px solid #a23d50;text-decoration:none!important;box-shadow:0 3px 8px #0002;font-size:12px}
+#ibf-home .ibf-ticket-emre{border-left-color:#b98c4a;background:#e3cfa9}
+#ibf-home .ibf-ticket-rating{grid-row:2;font-size:22px;line-height:1.1}
+#ibf-home .ibf-ticket-arrow{grid-column:2;grid-row:1/3;align-self:center;font-size:23px;border-left:1px dashed #b69e7e;padding-left:15px}
+#ibf-home.ibf-review-page .ibf-review-lead{display:block!important;margin:0 0 24px;padding:0}
+#ibf-home .ibf-review-synopsis{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:start;padding:0 4px}
+#ibf-home .ibf-review-screen{min-width:0;background:#e9dfce;padding:8px 8px 10px;border:1px solid #d9cbb5}
+#ibf-home .ibf-review-screen .ibf-review-trailer-link{margin:7px 5px 0;font-size:12px}
+#ibf-home.ibf-review-page .ibf-prose .konu-left h2{font-size:27px!important;margin:0 0 12px!important}
+#ibf-home.ibf-review-page .ibf-prose .konu-left p{font-size:16px;line-height:1.75}
+#ibf-home.ibf-review-page .container1{gap:26px!important;align-items:stretch}
+#ibf-home.ibf-review-page .ibf-review-column{padding:0 26px 24px!important;background:#fff9ef;border:1px solid #dfd0b8;border-top:0;box-shadow:0 5px 14px #45231808;scroll-margin-top:30px}
+#ibf-home .ibf-review-voice-label{margin:0 -26px 0!important;padding:12px 26px;background:#742735;color:#f4e6cf;font-size:10px!important;letter-spacing:2px;line-height:1.4}
+#ibf-home .ibf-review-emre .ibf-review-voice-label{background:#6d5437}
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-name{margin:20px 0 18px!important;font-size:25px!important}
+#ibf-home .ibf-review-column>p:not(.ibf-review-voice-label){font-size:16px;line-height:1.8;margin-bottom:18px}
+@media(max-width:1050px){#ibf-home .ibf-night-scene{min-height:330px}#ibf-home .ibf-night-note{padding:26px 22px;width:86%}#ibf-home .ibf-night-note h3{font-size:23px}#ibf-home .ibf-night-note p{font-size:13px}#ibf-home .ibf-about-copy h2{font-size:34px}}
+@media(max-width:760px){#ibf-home .ibf-night-scene{min-height:320px;padding:18px 0 22px}#ibf-home .ibf-night-note{width:83%;padding:25px 22px}#ibf-home .ibf-night-popcorn{width:36%;right:-3px}#ibf-home .ibf-about{grid-template-columns:1fr}#ibf-home .ibf-about-copy{min-height:300px;padding:26px 22px 100px}#ibf-home .ibf-about-copy h2{font-size:34px;max-width:320px}#ibf-home .ibf-about-reel{width:58%;bottom:-10px}#ibf-home .ibf-about-image{min-height:0;height:auto;aspect-ratio:1.9;object-fit:cover}#ibf-home .ibf-review-masthead{grid-template-columns:100px minmax(0,1fr);gap:18px;padding:22px 18px;align-items:start}#ibf-home .ibf-prose .ibf-review-masthead h1{font-size:29px!important;letter-spacing:-.7px}#ibf-home .ibf-review-kicker{font-size:8px;letter-spacing:1.5px}#ibf-home .ibf-review-masthead .ibf-review-poster img{border-width:3px}#ibf-home .ibf-review-facts{gap:5px 10px;padding-top:10px}#ibf-home .ibf-review-facts p{font-size:11px!important}#ibf-home .ibf-review-score-tickets{gap:8px}#ibf-home .ibf-review-score-ticket{min-width:0;width:100%;box-sizing:border-box;padding:8px 11px;font-size:11px}#ibf-home .ibf-ticket-rating{font-size:18px}#ibf-home .ibf-review-synopsis{grid-template-columns:1fr;gap:18px;padding:0}#ibf-home.ibf-review-page .ibf-review-column{padding:0 20px 22px!important}#ibf-home .ibf-review-voice-label{margin:0 -20px!important;padding:11px 20px}}
+@media(prefers-reduced-motion:no-preference){#ibf-home .ibf-review-score-ticket:hover{transform:translateY(-2px);transition:transform .15s}}
+
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-masthead a.ibf-review-imdb{color:#e5c891!important}
+
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column>p.ibf-review-voice-label{color:#f4e6cf!important;padding:12px 26px!important;margin:0 -26px 0!important;font-size:10px!important;line-height:1.5!important;letter-spacing:2px}
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column{padding:0 26px 24px!important;border-top:0!important}
+@media(max-width:760px){#ibf-home.ibf-review-page .ibf-prose .ibf-review-column{padding:0 20px 22px!important}#ibf-home.ibf-review-page .ibf-prose .ibf-review-column>p.ibf-review-voice-label{padding:12px 20px!important;margin:0 -20px 0!important}}

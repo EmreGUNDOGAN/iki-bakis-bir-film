@@ -77,6 +77,21 @@ window.IBF_ENHANCE_REVIEW=function(){(() => {
     // Put both score ribbons and profile links at the same visual baseline.
     if(score)column.append(score);if(ratingLink)column.append(ratingLink);
   });
+  // Compose a film-specific opening from the original poster and metadata.
+  const masthead=el('section','ibf-review-masthead');
+  const backdrop=el('img','ibf-review-backdrop');backdrop.src=posterImage?.src||'';backdrop.alt='';backdrop.setAttribute('aria-hidden','true');
+  head.prepend(el('p','ibf-review-kicker','BİR FİLM · İKİ BAKIŞ'));
+  head.append(facts);if(imdb)head.append(imdb);
+  const scoreTickets=el('div','ibf-review-score-tickets');
+  reviewers.forEach((column,i)=>{const name=i===0?'Ezgi':'Emre';column.id='ibf-review-'+(i===0?'ezgi':'emre');
+    const value=column.querySelector('[data-source-score]')?.dataset.sourceScore;
+    const a=link('', '#'+column.id,'ibf-review-score-ticket '+(i===0?'ibf-ticket-ezgi':'ibf-ticket-emre'));
+    a.append(el('span','',name+'’nin bakışı'),el('span','ibf-ticket-rating',value||'Yorumu oku'),el('span','ibf-ticket-arrow','↓'));scoreTickets.append(a);
+    const h=column.querySelector('.ibf-review-name');if(h){const label=el('p','ibf-review-voice-label',i===0?'01 / EZGİ’NİN SİNEMASI':'02 / EMRE’NİN SİNEMASI');h.before(label);}
+  });head.append(scoreTickets);
+  masthead.append(backdrop,poster,head);lead.before(masthead);lead.replaceChildren(details);
+  const screen=el('div','ibf-review-screen');[...details.children].filter(n=>n!==synopsis).forEach(n=>screen.append(n));if(screen.children.length)details.append(screen);
+  root.dataset.cinemaReview='v12';
   // Keep existing previous-review and Instagram links, presented as a quiet row.
   const legacyExtras=[...body.querySelectorAll('h3')].filter(h=>!columns.contains(h)&&!lead.contains(h));
   if(legacyExtras.length){const extras=el('nav','ibf-review-previous');extras.setAttribute('aria-label','Yazı bağlantıları');legacyExtras.forEach(h=>{extras.append(h);});columns.after(extras);}
