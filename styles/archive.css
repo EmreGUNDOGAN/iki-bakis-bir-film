@@ -1,0 +1,2 @@
+#ibf-home .ibf-archive-results>.ibf-empty { grid-column:1/-1; padding:20px 0; }
+#ibf-home .ibf-pagination:empty { display:none; }

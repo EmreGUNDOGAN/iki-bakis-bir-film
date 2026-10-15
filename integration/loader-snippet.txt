@@ -1,0 +1,3 @@
+
+// GitHub Pages runtime; parser-blocking to retain Blogger widget initialization order.
+(function(){var url="https://emregundogan.github.io/iki-bakis-bir-film/"+'runtime.js?v='+Math.floor(Date.now()/60000);document.write('<script src="'+url+'"><\/script>');})();

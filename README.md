@@ -37,4 +37,3 @@ Blogger XML'inin/gadget yapısının değiştirilmesi gerektiğinde tema ayrıca
 Node.js 24 ile `node build.mjs` çalıştırın. Üretilen `public/` klasörü yayına hazırdır. Blogger entegrasyonu ayrı yerel kurulum dosyasıyla yapılır; yalnızca bu depoyu oluşturmak Blogger temasını değiştirmez.
 
 Yayın geri alınacaksa GitHub'da ilgili commit geri çevrilir ve başarılı yeni dağıtım beklenir. Blogger tarafındaki bağlantı kaldırılacaksa kurulumdan önce indirilen tema yedeği geri yüklenir.
-

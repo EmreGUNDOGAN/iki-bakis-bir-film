@@ -1,0 +1,167 @@
+/* Approved article reference, Open Sans regular. All rules are post-scoped. */
+#ibf-home.ibf-review-page .ibf-page-main { padding:18px 1px 0 7px; min-height:0; }
+#ibf-home.ibf-review-page .ibf-wrap { width:calc(100% - 72px); }
+#ibf-home.ibf-review-page .ibf-header { min-height:70px; padding-block:4px; }
+#ibf-home.ibf-review-page .ibf-breadcrumb { font-size:14px; line-height:1.5; margin:0 12px 10px; gap:10px; }
+#ibf-home.ibf-review-page .ibf-breadcrumb a { border:0; }
+#ibf-home.ibf-review-page .ibf-page-heading { border:0; margin:0 12px 14px; padding:0; }
+#ibf-home.ibf-review-page .ibf-page-heading h1 { font-size:clamp(35px,5.1vw,65px); line-height:1.13; letter-spacing:-2.7px; margin:0 0 4px; }
+#ibf-home.ibf-review-page .ibf-review-date { display:block; font-size:14px; color:#58656c; }
+#ibf-home.ibf-review-page .ibf-prose { font:400 16px/1.52 'Open Sans',sans-serif; color:#344b57; }
+#ibf-home.ibf-review-page .ibf-review-lead { display:grid; grid-template-columns:minmax(0,.96fr) minmax(0,1.5fr) minmax(0,1fr); align-items:stretch; gap:28px; margin-bottom:19px; }
+#ibf-home.ibf-review-page .ibf-review-poster { align-self:start; }
+#ibf-home.ibf-review-page .ibf-review-poster img { width:100%!important; height:100%!important; object-fit:cover; border-radius:2px!important; transform:none!important; }
+#ibf-home.ibf-review-page .ibf-review-poster a { padding:0!important; aspect-ratio:238/345; overflow:hidden; }
+#ibf-home.ibf-review-page .ibf-review-synopsis { min-width:0; }
+#ibf-home.ibf-review-page .ibf-prose .konu-left { display:block!important; }
+#ibf-home.ibf-review-page .ibf-prose .konu-baslik { font-size:28px; line-height:1.3; letter-spacing:-1px; margin:0 0 7px!important; padding:0!important; }
+#ibf-home.ibf-review-page .ibf-prose .konu-aciklama { font-size:15px; line-height:1.5; margin:0 0 24px!important; }
+#ibf-home.ibf-review-page .ibf-prose .konu-aciklama i { font-style:normal; }
+#ibf-home.ibf-review-page .ibf-review-trailer { aspect-ratio:2.39; background:#deded7; border-radius:2px; overflow:hidden; }
+#ibf-home.ibf-review-page .ibf-review-trailer iframe { width:100%!important; height:100%!important; aspect-ratio:auto; border:0!important; border-radius:2px!important; background:#deded7!important; }
+#ibf-home.ibf-review-page .ibf-review-trailer-play { position:relative; display:block; width:100%; height:100%; padding:0; border:0; background:#deded7; }
+#ibf-home.ibf-review-page .ibf-review-trailer-play img { width:100%; height:100%; object-fit:cover; }
+#ibf-home.ibf-review-page .ibf-review-play-circle { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:54px; height:54px; display:grid; place-items:center; border-radius:50%; background:#cf735c; box-shadow:0 0 0 1px #faf8f422; }
+#ibf-home.ibf-review-page .ibf-review-play-circle::after { content:''; display:block; width:0; height:0; border-top:12px solid transparent; border-bottom:12px solid transparent; border-left:18px solid #fffaf4; margin-left:5px; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-trailer-link { display:inline-block; color:#18323c!important; font-size:13px; border-bottom:1px solid transparent; text-decoration:none; margin-top:5px; }
+#ibf-home.ibf-review-page .ibf-review-trailer-link:hover { border-bottom-color:currentColor; }
+#ibf-home.ibf-review-page .ibf-review-ticket { position:relative; background:#d4dfcd; color:#18323c; margin-top:-10px; min-width:0; display:flex; flex-direction:column; }
+#ibf-home.ibf-review-page .ibf-review-ticket::before,#ibf-home.ibf-review-page .ibf-review-ticket::after { content:''; position:absolute; width:32px; height:32px; border-radius:50%; background:#faf8f4; top:-16px; left:-16px; }
+#ibf-home.ibf-review-page .ibf-review-ticket::after { left:auto; right:-16px; }
+#ibf-home.ibf-review-page .ibf-review-ticket-main { padding:18px 26px 28px; flex:1; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-ticket-label { font-size:10px; letter-spacing:2.7px; text-align:center; padding:0 0 14px!important; margin:0!important; border-bottom:1px solid #a8b8a3; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-ticket h2 { font-size:26px; letter-spacing:-.8px; line-height:1.3; padding:22px 0 11px!important; margin:0!important; border-bottom:1px solid #a8b8a3; }
+#ibf-home.ibf-review-page .ibf-review-facts { padding:17px 7px 22px; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-facts p { font-size:15px; line-height:1.5; margin:0 0 14px!important; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-facts p:last-child { margin-bottom:0!important; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-imdb { font-size:14px; color:#18323c!important; display:inline-block; padding-bottom:2px; text-decoration:none; border-bottom:1px solid #18323c; margin-left:7px; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-ticket-stub { position:relative; padding:17px 8px 21px!important; margin:0 26px!important; font-size:10px; letter-spacing:2.5px; text-align:center; background:repeating-linear-gradient(90deg,#18323c 0 9px,transparent 9px 17px) top/100% 1px no-repeat; }
+#ibf-home.ibf-review-page .ibf-review-ticket-stub::before,#ibf-home.ibf-review-page .ibf-review-ticket-stub::after { content:''; position:absolute; top:-13px; left:-39px; width:26px; height:26px; border-radius:50%; background:#faf8f4; }
+#ibf-home.ibf-review-page .ibf-review-ticket-stub::after { left:auto; right:-39px; }
+#ibf-home.ibf-review-page .ibf-review-film-strip { height:19px; border-top:1px solid #d3d0ca; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='11'%3E%3Crect width='11' height='11' rx='2' fill='%23d0cdc7'/%3E%3C/svg%3E") left 6px repeat-x; margin:20px -4px 10px; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-columns-heading { font-size:38px; line-height:1.25; letter-spacing:-1.8px; margin:0 0 14px!important; }
+#ibf-home.ibf-review-page .ibf-prose .container1 { display:grid!important; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:32px; align-items:stretch; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column { display:flex!important; flex-direction:column; min-width:0; width:100%!important; border:0!important; padding:0!important; margin:0!important; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-emre { border-left:1px solid #d3d0ca!important; padding-left:17px!important; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-name { display:flex; align-items:center; gap:11px; font-size:20px; letter-spacing:-.4px; line-height:1.4; margin:0 0 8px!important; padding:0!important; color:#18323c!important; }
+#ibf-home.ibf-review-page .ibf-review-dot { display:inline-block; flex:none; width:23px; height:23px; background:#cf735c; border:1px solid #faf8f4; border-radius:50%; }
+#ibf-home.ibf-review-page .ibf-review-emre .ibf-review-dot { background:#849989; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column p { margin:0 0 17px!important; padding:0!important; font-size:15px; line-height:1.5; color:#344b57!important; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column p i { font-style:normal; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column br { display:none; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-column .ibf-review-score { display:flex; align-items:center; gap:16px; margin:auto 0 10px!important; padding:8px 9px!important; background:#f7e7e0; border-radius:3px; color:#18323c!important; font-size:14px; line-height:1.25; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-emre .ibf-review-score { background:#e6ece1; }
+#ibf-home.ibf-review-page .ibf-review-score .ibf-review-dot { width:22px; height:22px; }
+#ibf-home.ibf-review-page .ibf-review-score-value { font-size:24px; line-height:1.2; letter-spacing:-1px; margin-left:8px; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-rating-link { align-self:start; color:#18323c!important; text-decoration:none; border-bottom:1px solid currentColor; font-size:14px; padding-bottom:2px; }
+#ibf-home.ibf-review-page .ibf-review-spoiler { margin:0 0 20px; }
+#ibf-home.ibf-review-page .ibf-review-spoiler summary { display:flex; align-items:center; gap:8px; width:max-content; max-width:100%; font-size:14px; line-height:1.5; color:#18323c; list-style:none; border-bottom:1px solid #18323c; cursor:pointer; }
+#ibf-home.ibf-review-page .ibf-review-spoiler summary::-webkit-details-marker { display:none; }
+#ibf-home.ibf-review-page .ibf-review-spoiler[open] summary { margin-bottom:18px; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-spoiler>p:first-of-type,#ibf-home.ibf-review-page .ibf-prose .ibf-review-spoiler>p:last-child { font-size:12px; color:#b85e49!important; }
+#ibf-home.ibf-review-page .ibf-review-previous { display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 22px; padding:14px 0 0; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-previous h3 { font-size:11px; line-height:1.6; margin:0!important; }
+#ibf-home.ibf-review-page .ibf-prose .ibf-review-previous a { color:#58656c!important; text-decoration:none; }
+#ibf-home.ibf-review-page .ibf-labels { margin-top:10px; }
+#ibf-home.ibf-review-page .ibf-labels a { font-size:11px; padding:2px 5px; border:0; }
+#ibf-home.ibf-review-page .ibf-review-share { display:flex; align-items:center; flex-wrap:wrap; gap:12px 20px; justify-content:space-between; border-top:1px solid #d3d0ca; padding:14px 0 0; margin-top:14px; }
+#ibf-home.ibf-review-page .ibf-review-share>p { font-size:23px; letter-spacing:-.7px; }
+#ibf-home.ibf-review-page .ibf-review-share-actions { display:flex; align-items:center; gap:20px; }
+#ibf-home.ibf-review-page .ibf-review-share-actions a,#ibf-home.ibf-review-page .ibf-review-share-actions button { display:inline-flex; align-items:center; gap:10px; font-size:13px; border:0; background:transparent; padding:0; }
+#ibf-home.ibf-review-page .ibf-review-share-actions>:not(:first-child) { border-left:1px solid #d3d0ca; padding-left:20px; }
+#ibf-home.ibf-review-page .ibf-review-share-actions svg { width:23px; height:23px; }
+#ibf-home.ibf-review-page .ibf-review-share-actions a:last-child svg { color:#d16677; }
+#ibf-home.ibf-review-page .ibf-review-share-status { flex-basis:100%; font-size:12px; overflow-wrap:anywhere; }
+#ibf-home.ibf-review-page .ibf-review-share-status:empty { display:none; }
+#ibf-home.ibf-review-page .ibf-related { border:0; margin:0; padding:0; }
+#ibf-home.ibf-review-page .ibf-review-related-heading { display:flex; justify-content:space-between; gap:20px; align-items:center; margin:0 0 15px; }
+#ibf-home.ibf-review-page .ibf-review-related-heading h2 { font-size:26px; letter-spacing:-.8px; line-height:1.3; margin:0; }
+#ibf-home.ibf-review-page .ibf-review-related-heading>a { border-bottom:1px solid currentColor; font-size:13px; white-space:nowrap; }
+#ibf-home.ibf-review-page .ibf-review-related-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:22px; }
+#ibf-home.ibf-review-page .ibf-review-related-card { display:grid; grid-template-columns:1fr 1.1fr; gap:13px; min-width:0; }
+#ibf-home.ibf-review-page .ibf-review-related-card:first-child { grid-template-columns:1.9fr 1fr; }
+#ibf-home.ibf-review-page .ibf-review-related-picture { display:block; height:138px; overflow:hidden; border-radius:2px; }
+#ibf-home.ibf-review-page .ibf-review-related-picture img { width:100%; height:100%; object-fit:cover; }
+#ibf-home.ibf-review-page .ibf-review-related-picture .ibf-palm-art { background-size:155.0218% 473.3974%; background-position:10.582% 25.236%; }
+#ibf-home.ibf-review-page .ibf-review-related-copy { display:flex; flex-direction:column; min-width:0; align-items:start; }
+#ibf-home.ibf-review-page .ibf-review-related-copy h3 { font-size:14px; line-height:1.4; letter-spacing:-.3px; margin:0 0 6px; }
+#ibf-home.ibf-review-page .ibf-review-related-copy p { font-size:12px; line-height:1.3; color:#58656c; }
+#ibf-home.ibf-review-page .ibf-review-paired-dots { display:flex; margin-top:10px; }
+#ibf-home.ibf-review-page .ibf-review-paired-dots i { display:block; width:19px; height:19px; border:1px solid #faf8f4; border-radius:50%; background:#cf735c; }
+#ibf-home.ibf-review-page .ibf-review-paired-dots i+i { background:#849989; margin-left:-6px; }
+#ibf-home.ibf-review-page .ibf-review-related-read { display:inline-block; border-bottom:1px solid currentColor; font-size:12px; line-height:1.5; margin-top:auto; white-space:nowrap; }
+#ibf-home.ibf-review-page .ibf-comments { padding:0; }
+#ibf-home.ibf-review-page .ibf-review-comment-panel>summary { display:flex; justify-content:space-between; align-items:center; gap:20px; list-style:none; cursor:pointer; }
+#ibf-home.ibf-review-page .ibf-review-comment-panel>summary::-webkit-details-marker { display:none; }
+#ibf-home.ibf-review-page .ibf-review-comment-panel>summary>span:first-child { display:grid; gap:2px; }
+#ibf-home.ibf-review-page .ibf-review-comment-title { font-size:26px; letter-spacing:-.9px; line-height:1.3; }
+#ibf-home.ibf-review-page .ibf-review-comment-subtitle { font-size:15px; color:#58656c; }
+#ibf-home.ibf-review-page .ibf-review-comment-button { display:inline-flex; padding:9px 30px; border:1px solid #cf735c; border-radius:4px; color:#bd634e; font-size:13px; white-space:nowrap; }
+#ibf-home.ibf-review-page .ibf-comments .comments-section { display:block!important; padding:20px 0; margin:0; background:transparent; box-shadow:none; border-radius:0; }
+#ibf-home.ibf-review-page .ibf-comments .title-wrap { display:none; }
+#ibf-home.ibf-review-page .ibf-comments #comments { width:100%; }
+#ibf-home.ibf-review-page .ibf-footer { margin-top:12px; }
+@media(min-width:1300px) {
+ #ibf-home.ibf-review-page .ibf-review-lead { gap:36px; }
+ #ibf-home.ibf-review-page .ibf-prose .konu-aciklama { font-size:17px; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-column p { font-size:17px; line-height:1.65; }
+ #ibf-home.ibf-review-page .ibf-review-related-picture { height:160px; }
+}
+@media(max-width:1050px) and (min-width:761px) {
+ #ibf-home.ibf-review-page .ibf-review-lead { gap:28px; grid-template-columns:minmax(0,.96fr) minmax(0,1.5fr) minmax(0,1fr); }
+ #ibf-home.ibf-review-page .ibf-review-ticket-main { padding-inline:18px; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-ticket h2 { font-size:23px; }
+ #ibf-home.ibf-review-page .ibf-prose .konu-baslik { font-size:26px; }
+ #ibf-home.ibf-review-page .ibf-review-related-grid { gap:17px; }
+}
+@media(max-width:900px) and (min-width:761px) {
+ #ibf-home.ibf-review-page .ibf-review-lead { grid-template-columns:180px minmax(0,1fr); }
+ #ibf-home.ibf-review-page .ibf-review-ticket { grid-column:1/-1; margin:0; }
+ #ibf-home.ibf-review-page .ibf-review-ticket-main { display:grid; grid-template-columns:1.1fr 1.4fr 2fr; gap:0 18px; align-items:center; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-ticket-label { grid-column:1/-1; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-ticket h2 { border:0; padding-block:16px!important; }
+ #ibf-home.ibf-review-page .ibf-review-facts { padding-block:16px; }
+ #ibf-home.ibf-review-page .ibf-review-related-grid { grid-template-columns:1fr 1fr; }
+ #ibf-home.ibf-review-page .ibf-review-related-card:first-child { grid-column:1/-1; grid-template-columns:1.2fr 1fr; }
+ #ibf-home.ibf-review-page .ibf-review-related-card:first-child .ibf-review-related-picture { height:180px; }
+}
+@media(max-width:760px) {
+ #ibf-home.ibf-review-page .ibf-wrap { width:calc(100% - 36px); }
+ #ibf-home.ibf-review-page .ibf-page-main { padding:22px 0 0; }
+ #ibf-home.ibf-review-page .ibf-breadcrumb { margin-inline:0; font-size:11px; gap:7px; }
+ #ibf-home.ibf-review-page .ibf-page-heading { margin:0 0 28px; }
+ #ibf-home.ibf-review-page .ibf-page-heading h1 { font-size:clamp(32px,7.8vw,49px); letter-spacing:-1.7px; }
+ #ibf-home.ibf-review-page .ibf-review-lead { grid-template-columns:150px minmax(0,1fr); gap:24px; }
+ #ibf-home.ibf-review-page .ibf-review-ticket { grid-column:1/-1; width:min(100%,370px); margin:0 auto; }
+ #ibf-home.ibf-review-page .ibf-prose .konu-baslik { font-size:24px; }
+ #ibf-home.ibf-review-page .ibf-prose .konu-aciklama { font-size:15px; line-height:1.65; }
+ #ibf-home.ibf-review-page .ibf-prose .container1 { grid-template-columns:1fr; gap:35px; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-emre { border-left:0!important; padding-left:0!important; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-columns-heading { font-size:31px; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-column p { font-size:16px; line-height:1.8; margin-bottom:19px!important; }
+ #ibf-home.ibf-review-page .ibf-prose .ibf-review-column .ibf-review-score { margin-top:5px!important; }
+ #ibf-home.ibf-review-page .ibf-review-share>p { font-size:23px; }
+ #ibf-home.ibf-review-page .ibf-review-share-actions { flex-wrap:wrap; gap:14px; }
+ #ibf-home.ibf-review-page .ibf-review-share-actions>:not(:first-child) { padding-left:14px; }
+ #ibf-home.ibf-review-page .ibf-review-share-actions a,#ibf-home.ibf-review-page .ibf-review-share-actions button { font-size:11px; gap:6px; }
+ #ibf-home.ibf-review-page .ibf-review-related-heading h2 { font-size:22px; }
+ #ibf-home.ibf-review-page .ibf-review-related-heading>a { font-size:11px; }
+ #ibf-home.ibf-review-page .ibf-review-related-grid { grid-template-columns:1fr; gap:20px; }
+ #ibf-home.ibf-review-page .ibf-review-related-card,#ibf-home.ibf-review-page .ibf-review-related-card:first-child { grid-template-columns:150px minmax(0,1fr); }
+ #ibf-home.ibf-review-page .ibf-review-related-picture { height:170px; }
+ #ibf-home.ibf-review-page .ibf-review-related-card:first-child .ibf-review-related-picture { height:120px; }
+ #ibf-home.ibf-review-page .ibf-review-related-copy h3 { font-size:17px; }
+ #ibf-home.ibf-review-page .ibf-review-comment-title { font-size:24px; }
+ #ibf-home.ibf-review-page .ibf-review-comment-subtitle { font-size:13px; }
+ #ibf-home.ibf-review-page .ibf-review-comment-button { padding:8px 13px; font-size:11px; }
+}
+@media(max-width:480px) {
+ #ibf-home.ibf-review-page .ibf-wrap { width:calc(100% - 28px); }
+ #ibf-home.ibf-review-page .ibf-review-lead { grid-template-columns:1fr; }
+ #ibf-home.ibf-review-page .ibf-review-poster { width:190px; margin:0 auto!important; }
+ #ibf-home.ibf-review-page .ibf-review-ticket { grid-column:auto; }
+ #ibf-home.ibf-review-page .ibf-review-related-card,#ibf-home.ibf-review-page .ibf-review-related-card:first-child { grid-template-columns:120px minmax(0,1fr); }
+ #ibf-home.ibf-review-page .ibf-review-related-picture { height:155px; }
+ #ibf-home.ibf-review-page .ibf-review-comment-panel>summary { gap:10px; }
+ #ibf-home.ibf-review-page .ibf-review-comment-title { font-size:22px; }
+}
