@@ -16,6 +16,7 @@ Bu depo, mevcut Blogger temasının tasarımını ve etkileşimlerini günceller
 | Ana sayfa yerleşimi | `templates/home.html` |
 | Ortak menü ve alt bölüm | `templates/shell.html` ve ana sayfanın aynı bölümleri |
 | Ana sayfa renkleri, fontları, boşlukları | `styles/home.css` |
+| Sinema salonu teması, bordo/kehribar renkler ve mobil uyarlama | `styles/cinema.css` (önceki stillerin ardından uygulanır) |
 | İç sayfaların ortak görünümü | `styles/inner.css` |
 | Film inceleme görünümü | `styles/review.css` |
 | Biz Kimiz ve İletişim görünümü | `styles/owned-pages.css` |
@@ -23,6 +24,8 @@ Bu depo, mevcut Blogger temasının tasarımını ve etkileşimlerini günceller
 | Ana sayfa filtreleri ve film rafları | `scripts/home.js` |
 
 Yeni film yazmak için **Blogger → Yayınlar**, Biz Kimiz/İletişim metinleri için **Blogger → Sayfalar** kullanılır. Bu depoya yazı eklemek gerekmez. İncelemelerde mevcut iki yazar bölümü ve puan biçimi kullanılmaya devam edilir.
+
+Sinema tasarımının kapsamı ve görsel kaynakları: [SINEMA.md](SINEMA.md).
 
 ## Yayınlama düzeni
 

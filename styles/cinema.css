@@ -1,0 +1,243 @@
+/* Approved velvet-cinema direction. Real content, regular Open Sans, no avatars. */
+body.ibf-home { background:#f5efe5!important; color:#292323!important; }
+#ibf-home { --ibf-paper:#f5efe5; --ibf-ink:#292323; --ibf-muted:#6c625c; --ibf-coral:#922f3d; --ibf-sage:#9a7439; --ibf-ticket:#eee0bf; --ibf-blush:#f0e1d7; --ibf-line:#d5c8b8; --ibf-amber:#c99445; background:var(--ibf-paper);color:var(--ibf-ink); }
+#ibf-home .ibf-brand-name { white-space:nowrap; }
+#ibf-home .ibf-logo>span { background-color:var(--ibf-amber);transform:rotate(-16deg); }
+#ibf-home .ibf-logo>span+span { background-color:var(--ibf-coral);transform:rotate(12deg); }
+#ibf-home .ibf-header { color:#f5efe5;border-bottom:1px solid #dec7aa38;background:#451116; }
+#ibf-home .ibf-header .ibf-logo>span+span { background:transparent;border-color:#f5efe5; }
+#ibf-home .ibf-header .ibf-nav a:hover { color:#e5b872; }
+#ibf-home .ibf-genres-list { color:var(--ibf-ink);border-color:var(--ibf-line);box-shadow:0 10px 25px #17080b30; }
+#ibf-home .ibf-genres-list a:hover { background:#e8d9c6;color:#6b1e2a; }
+#ibf-home .ibf-mobile-nav,#ibf-home .ibf-search { background:var(--ibf-paper);color:var(--ibf-ink);position:relative;z-index:12; }
+#ibf-home .ibf-search button[type=submit] { background:#922f3d;color:#fff7ec;border-color:#922f3d; }
+#ibf-home .ibf-footer { color:var(--ibf-ink);border-color:#922f3d66; }
+#ibf-home .ibf-seats { color:#922f3d; }
+#ibf-home .ibf-cinema-home { font-weight:400; }
+#ibf-home.ibf-cinema-home { font-size:15px;line-height:1.55; }
+#ibf-home.ibf-cinema-home h1,#ibf-home.ibf-cinema-home h2,#ibf-home.ibf-cinema-home h3 { font-weight:400; }
+#ibf-home.ibf-cinema-home .ibf-theatre { background:#420e14 url('@@ASSET_BASE@@assets/cinema-curtains-v1.png') center top/100% 100% no-repeat;color:#f5efe5;position:relative;isolation:isolate; }
+#ibf-home.ibf-cinema-home .ibf-topbar { position:relative;z-index:5;width:calc(100% - 144px);max-width:1400px;margin:auto; }
+#ibf-home.ibf-cinema-home .ibf-header { min-height:76px;padding:12px 24px;gap:26px;background:#451116df; }
+#ibf-home.ibf-cinema-home .ibf-brand { font-size:24px;gap:14px;letter-spacing:-.6px; }
+#ibf-home.ibf-cinema-home .ibf-logo { width:65px;height:48px; }
+#ibf-home.ibf-cinema-home .ibf-nav { font-size:14px;gap:32px; }
+#ibf-home.ibf-cinema-home .ibf-search-toggle { padding-left:21px;width:52px;border-left:1px solid #f5efe540;margin-left:0; }
+#ibf-home.ibf-cinema-home .ibf-stage { width:calc(100% - 196px);max-width:1320px;margin:0 auto;padding:30px 0 28px; }
+#ibf-home.ibf-cinema-home .ibf-intro { padding:0 0 20px;gap:26px;align-items:flex-end; }
+#ibf-home.ibf-cinema-home .ibf-eyebrow { font-size:11px;line-height:1.5;letter-spacing:2.8px;color:#e0a466;margin-bottom:7px; }
+#ibf-home.ibf-cinema-home h1 { font-size:clamp(28px,3.45vw,50px);line-height:1.16;letter-spacing:-1.8px;color:#fff5e7; }
+#ibf-home.ibf-cinema-home .ibf-intro-note { font-size:14px;line-height:1.6;padding:0 0 2px; }
+#ibf-home.ibf-cinema-home .ibf-showcase { grid-template-columns:minmax(0,3.6fr) minmax(220px,1fr);gap:28px;padding:0;align-items:stretch; }
+#ibf-home.ibf-cinema-home .ibf-hero-image { aspect-ratio:2.65;border:9px solid #181818;box-shadow:0 2px 0 #99816b50,0 13px 30px #0008; }
+#ibf-home.ibf-cinema-home .ibf-hero-image .ibf-palm-art { position:absolute;top:50%;height:auto;aspect-ratio:687/355;transform:translateY(-50%); }
+#ibf-home.ibf-cinema-home .ibf-hero-caption { display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 10px 0; }
+#ibf-home.ibf-cinema-home .ibf-hero-caption h2 { font-size:27px;line-height:1.3;letter-spacing:-.6px; }
+#ibf-home.ibf-cinema-home .ibf-hero-caption p { font-size:13px;color:#e4d5c6;margin-top:1px; }
+#ibf-home.ibf-cinema-home .ibf-hero-reviewers { display:flex;align-items:center;gap:15px;font-size:12px;flex-wrap:wrap;justify-content:flex-end; }
+#ibf-home.ibf-cinema-home .ibf-byline-names { letter-spacing:.2px;white-space:nowrap; }
+#ibf-home.ibf-cinema-home .ibf-byline-names>span { color:#d3a359;padding:0 3px; }
+#ibf-home.ibf-cinema-home .ibf-hero-reviewers .ibf-text-link { font-size:12px; }
+#ibf-home.ibf-cinema-home .ibf-hero-reviewers a:hover { color:#e5b872; }
+#ibf-home.ibf-cinema-home .ibf-ticket { background:#f5efe5;color:#292323;padding:0;margin:0;align-self:stretch;text-align:center;box-shadow:3px 8px 18px #13050655;clip-path:polygon(0 0,3% 1%,6% 0,9% 1%,12% 0,15% 1%,18% 0,21% 1%,24% 0,27% 1%,30% 0,33% 1%,36% 0,39% 1%,42% 0,45% 1%,48% 0,51% 1%,54% 0,57% 1%,60% 0,63% 1%,66% 0,69% 1%,72% 0,75% 1%,78% 0,81% 1%,84% 0,87% 1%,90% 0,93% 1%,96% 0,100% 1%,100% 99%,96% 100%,93% 99%,90% 100%,87% 99%,84% 100%,81% 99%,78% 100%,75% 99%,72% 100%,69% 99%,66% 100%,63% 99%,60% 100%,57% 99%,54% 100%,51% 99%,48% 100%,45% 99%,42% 100%,39% 99%,36% 100%,33% 99%,30% 100%,27% 99%,24% 100%,21% 99%,18% 100%,15% 99%,12% 100%,9% 99%,6% 100%,3% 99%,0 100%); }
+#ibf-home.ibf-cinema-home .ibf-ticket-inner { border:1px dashed #bfae96;margin:13px 13px 0;padding:13px 11px 12px; }
+#ibf-home.ibf-cinema-home .ibf-ticket::before,#ibf-home.ibf-cinema-home .ibf-ticket::after { display:none; }
+#ibf-home.ibf-cinema-home .ibf-ticket-label { font-size:10px;letter-spacing:2px;color:#7a2531;margin:0 0 10px; }
+#ibf-home.ibf-cinema-home .ibf-ticket-picture { aspect-ratio:228/264;max-height:clamp(180px,18vw,265px); }
+#ibf-home.ibf-cinema-home .ibf-ticket h2 { font-size:17px;line-height:1.35;letter-spacing:-.5px;margin:10px 0 0; }
+#ibf-home.ibf-cinema-home .ibf-ticket-caption { font-size:11px;color:#736255;margin-top:5px; }
+#ibf-home.ibf-cinema-home .ibf-ticket-button { background:#792530;color:#fff7ec;border:1px solid #792530;font-size:12px;border-radius:4px;padding:9px 7px;margin-top:13px; }
+#ibf-home.ibf-cinema-home .ibf-ticket-button:hover { background:#922f3d; }
+#ibf-home.ibf-cinema-home .ibf-ticket-stub { font-size:8px;color:#7a6452;letter-spacing:2.4px;border:0;padding:8px 5px 10px;margin:0; }
+#ibf-home.ibf-cinema-home .ibf-ticket-stub::before,#ibf-home.ibf-cinema-home .ibf-ticket-stub::after { display:none; }
+#ibf-home.ibf-cinema-home .ibf-film-content { background:#f5efe5; }
+#ibf-home.ibf-cinema-home .ibf-section-inner { width:calc(100% - 144px);max-width:1400px;margin-inline:auto; }
+#ibf-home.ibf-cinema-home .ibf-archive { padding-top:24px;padding-bottom:24px; }
+#ibf-home.ibf-cinema-home .ibf-section-heading { margin:0 0 18px;align-items:center;gap:24px; }
+#ibf-home.ibf-cinema-home .ibf-section-heading h2 { font-size:32px;letter-spacing:-.9px;line-height:1.25; }
+#ibf-home.ibf-cinema-home .ibf-filters { margin:0;gap:8px; }
+#ibf-home.ibf-cinema-home .ibf-filters button { padding:7px 16px;border-radius:4px;font-size:12px;min-height:34px; }
+#ibf-home.ibf-cinema-home .ibf-filters button+button { border-left:1px solid #c8b7a76b;border-radius:0; }
+#ibf-home.ibf-cinema-home .ibf-filters button.is-active { background:#852b37;color:#fff7ec;border-left-color:transparent;border-radius:4px; }
+#ibf-home.ibf-cinema-home .ibf-filters button.is-active::after { display:none; }
+#ibf-home.ibf-cinema-home .ibf-film-grid { grid-template-columns:repeat(5,minmax(0,1fr));gap:22px; }
+#ibf-home.ibf-cinema-home .ibf-film-card { min-width:0;position:relative; }
+#ibf-home.ibf-cinema-home .ibf-poster-link { aspect-ratio:2/2.8;background:#e1d6c5;border:4px solid #fff9ef;outline:1px solid #c7b99a70;box-shadow:1px 2px 4px #3a261a15; }
+#ibf-home.ibf-cinema-home .ibf-poster { width:100%;height:100%;object-fit:cover; }
+#ibf-home.ibf-cinema-home .ibf-film-card h3 { flex:none;font-size:15px;line-height:1.4;margin-top:10px;min-height:42px;letter-spacing:-.35px; }
+#ibf-home.ibf-cinema-home .ibf-card-meta { font-size:11px;color:#776b61;line-height:1.55;margin-top:3px;min-height:35px; }
+#ibf-home.ibf-cinema-home .ibf-card-scores { display:flex;align-items:center;flex-wrap:wrap;gap:7px 13px;font-size:11px;line-height:1.5;margin-top:7px; }
+#ibf-home.ibf-cinema-home .ibf-card-scores>span { display:inline-flex;align-items:center;gap:5px;white-space:nowrap; }
+#ibf-home.ibf-cinema-home .ibf-card-scores>span::before { content:'';display:block;width:6px;height:6px;border-radius:50%;background:#922f3d; }
+#ibf-home.ibf-cinema-home .ibf-card-scores>.ibf-score-emre::before { background:#a47834; }
+#ibf-home.ibf-cinema-home .ibf-card-scores>span>span { font-variant-numeric:tabular-nums; }
+#ibf-home.ibf-cinema-home .ibf-card-read { font-size:11px;color:#7a2833;margin-top:7px;align-self:flex-start;display:inline-flex;gap:6px; }
+#ibf-home.ibf-cinema-home .ibf-card-read:hover { text-decoration:underline;text-underline-offset:4px; }
+#ibf-home.ibf-cinema-home .ibf-archive-all { display:block;width:max-content;font-size:12px;margin:20px 0 0 auto; }
+#ibf-home.ibf-cinema-home .ibf-genre-shelf { margin:0;padding:26px 0 30px;border-top:1px solid #d5c8b880; }
+#ibf-home.ibf-cinema-home .ibf-genre-shelf .ibf-section-heading { margin-bottom:18px; }
+#ibf-home.ibf-cinema-home .ibf-genre-shelf .ibf-section-heading .ibf-text-link { font-size:12px; }
+#ibf-home.ibf-cinema-home .ibf-genre-shelf .ibf-eyebrow { color:#a96742;margin-bottom:4px; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark { background:#292323;color:#f5efe5;border:0; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-eyebrow { color:#e3a86c; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-poster-link { border:2px solid #dccbbd;outline:none;box-shadow:0 3px 8px #0005; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-poster { filter:brightness(.96); }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-card-meta { color:#d0bfb0; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-card-read { color:#ebc78e; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-card-scores>.ibf-score-ezgi::before { background:#e49f99; }
+#ibf-home.ibf-cinema-home .ibf-shelf-dark .ibf-card-scores>.ibf-score-emre::before { background:#e3b165; }
+#ibf-home.ibf-cinema-home .ibf-shelf-comedy .ibf-shelf-content { display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:28px;align-items:stretch; }
+#ibf-home.ibf-cinema-home .ibf-shelf-comedy .ibf-film-grid { grid-template-columns:repeat(3,minmax(0,1fr));gap:22px; }
+#ibf-home.ibf-cinema-home .ibf-night-note { position:relative;align-self:center;margin:7px 3px 12px;padding:36px 32px 30px;background:#792530;color:#fff4e5;box-shadow:0 2px 5px #35151c15;transform:rotate(-1deg); }
+#ibf-home.ibf-cinema-home .ibf-night-note h3 { font-size:27px;letter-spacing:-.7px;line-height:1.3; }
+#ibf-home.ibf-cinema-home .ibf-night-note p { font-size:15px;line-height:1.65;margin-top:14px;max-width:380px; }
+#ibf-home.ibf-cinema-home .ibf-night-note a { display:inline-block;margin-top:20px;font-size:12px;border-bottom:1px solid #fff4e570; }
+#ibf-home.ibf-cinema-home .ibf-note-tape { position:absolute;top:-9px;left:32px;background:#d9c9a9db;width:85px;height:22px;transform:rotate(2deg); }
+#ibf-home.ibf-cinema-home .ibf-note-film { position:absolute;bottom:12px;right:18px;transform:rotate(15deg);font-size:43px;line-height:1;color:#f6d1bb99; }
+#ibf-home.ibf-cinema-home .ibf-small-collection { display:grid;grid-template-columns:minmax(0,var(--ibf-left)) minmax(0,var(--ibf-right));gap:28px;align-items:stretch; }
+#ibf-home.ibf-cinema-home .ibf-small-collection>.ibf-film-grid { grid-template-columns:repeat(var(--ibf-count),minmax(0,1fr)); }
+#ibf-home.ibf-cinema-home .ibf-collection-note { position:relative;align-self:center;border-block:1px solid #cbb9a6;padding:35px 25px;margin-left:15px;color:#6a433a; }
+#ibf-home.ibf-cinema-home .ibf-collection-note h3 { font-size:30px;line-height:1.3;letter-spacing:-.8px; }
+#ibf-home.ibf-cinema-home .ibf-collection-note>p:not(.ibf-eyebrow) { font-size:14px;line-height:1.7;margin-top:13px;max-width:310px; }
+#ibf-home.ibf-cinema-home .ibf-collection-note .ibf-text-link { font-size:12px;margin-top:22px;white-space:normal; }
+#ibf-home.ibf-cinema-home .ibf-collection-motif { display:flex;margin-top:28px; }
+#ibf-home.ibf-cinema-home .ibf-collection-motif i { width:28px;height:28px;background:#922f3d;border-radius:50%; }
+#ibf-home.ibf-cinema-home .ibf-collection-motif i+i { background:#b98b43;margin-left:-6px; }
+#ibf-home.ibf-cinema-home .ibf-about { height:auto;min-height:260px;max-width:1544px;margin:0 auto;padding:0;grid-template-columns:44% minmax(0,1fr);gap:0;border-block:1px solid #922f3d66;background:#f0e6d9; }
+#ibf-home.ibf-cinema-home .ibf-about-copy { padding:30px 35px 30px max(40px,calc((100vw - 1400px)/2)); }
+#ibf-home.ibf-cinema-home .ibf-about h2 { color:#292323;font-size:46px;line-height:1.08;letter-spacing:-1.7px; }
+#ibf-home.ibf-cinema-home .ibf-about-copy>p:not(.ibf-eyebrow) { font-size:18px;margin-top:12px; }
+#ibf-home.ibf-cinema-home .ibf-solid-button { display:inline-block;background:#7d2532;color:#fff7ec;border:1px solid #7d2532;border-radius:4px;padding:10px 24px;font-size:14px;margin-top:20px; }
+#ibf-home.ibf-cinema-home .ibf-solid-button:hover { background:#922f3d; }
+#ibf-home.ibf-cinema-home .ibf-about-image { height:100%;max-height:330px;object-fit:cover;object-position:center; }
+#ibf-home.ibf-cinema-home .ibf-footer-wrap { width:calc(100% - 144px);max-width:1400px;margin:auto; }
+#ibf-home.ibf-cinema-home .ibf-footer { padding:20px 0 24px;margin:0;border:0;gap:24px; }
+#ibf-home.ibf-cinema-home .ibf-footer-brand { font-size:20px; }
+#ibf-home.ibf-cinema-home .ibf-footer>p { font-size:10px;letter-spacing:.8px;border:0;padding:0; }
+#ibf-home.ibf-cinema-home .ibf-footer nav { gap:15px;font-size:12px; }
+#ibf-home.ibf-cinema-home .ibf-seats { width:76px;height:47px;margin-left:14px; }
+/* Native Blogger pages keep their content/layout; shared identity follows the cinema palette. */
+#ibf-home.ibf-cinema-inner .ibf-wrap { max-width:1320px; }
+#ibf-home.ibf-cinema-inner .ibf-header { padding-inline:24px; }
+#ibf-home.ibf-cinema-inner .ibf-original-content { color:#292323; }
+#ibf-home.ibf-cinema-inner [data-design="approved-reference"],#ibf-home.ibf-cinema-inner [data-design="approved-reference"] h1,#ibf-home.ibf-cinema-inner [data-design="approved-reference"] h2 { color:#292323!important; }
+#ibf-home.ibf-cinema-inner .ibf-ref-kicker { color:#922f3d!important; }
+#ibf-home.ibf-cinema-inner :is(.ibf-ref-ticket,.ibf-review-ticket) { background:#eee0bf!important;color:#292323!important; }
+#ibf-home.ibf-cinema-inner :is(.ibf-ref-button,.ibf-ref-submit) { border-color:#922f3d!important;color:#922f3d!important; }
+@media(min-width:1600px) {
+ #ibf-home.ibf-cinema-home .ibf-stage { padding-top:35px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-picture { max-height:315px; }
+}
+@media(max-width:1150px) {
+ #ibf-home.ibf-cinema-home .ibf-topbar,#ibf-home.ibf-cinema-home .ibf-section-inner,#ibf-home.ibf-cinema-home .ibf-footer-wrap { width:calc(100% - 100px); }
+ #ibf-home.ibf-cinema-home .ibf-stage { width:calc(100% - 160px);padding-top:25px; }
+ #ibf-home.ibf-cinema-home .ibf-header { min-height:64px;padding-inline:18px; }
+ #ibf-home.ibf-cinema-home .ibf-brand { font-size:21px;gap:10px; }
+ #ibf-home.ibf-cinema-home .ibf-nav { gap:24px;font-size:12px; }
+ #ibf-home.ibf-cinema-home .ibf-intro-note { font-size:12px; }
+ #ibf-home.ibf-cinema-home .ibf-showcase { gap:20px;grid-template-columns:minmax(0,3.4fr) minmax(180px,1fr); }
+ #ibf-home.ibf-cinema-home .ibf-ticket-inner { margin:10px 10px 0;padding:10px 8px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-label { font-size:8px;letter-spacing:1.5px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-picture { max-height:215px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket h2 { font-size:14px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-button { font-size:10px;padding:7px 4px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-caption { font-size:10px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-stub { font-size:7px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-caption { padding-inline:4px;gap:12px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-caption h2 { font-size:23px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-reviewers { gap:7px 12px;font-size:10px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-reviewers .ibf-text-link { font-size:11px; }
+ #ibf-home.ibf-cinema-home .ibf-film-grid { gap:18px; }
+ #ibf-home.ibf-cinema-home .ibf-section-heading h2 { font-size:29px; }
+ #ibf-home.ibf-cinema-home .ibf-film-card h3 { font-size:14px; }
+ #ibf-home.ibf-cinema-home .ibf-card-meta { font-size:10px; }
+ #ibf-home.ibf-cinema-home .ibf-card-scores { font-size:10px;gap:6px 9px; }
+ #ibf-home.ibf-cinema-home .ibf-night-note { padding:28px 26px; }
+ #ibf-home.ibf-cinema-home .ibf-night-note h3 { font-size:25px; }
+ #ibf-home.ibf-cinema-home .ibf-night-note p { font-size:13px; }
+ #ibf-home.ibf-cinema-home .ibf-about-copy { padding-left:50px; }
+ #ibf-home.ibf-cinema-home .ibf-about h2 { font-size:39px; }
+ #ibf-home.ibf-cinema-home .ibf-about-copy>p:not(.ibf-eyebrow) { font-size:15px; }
+ #ibf-home.ibf-cinema-home .ibf-footer>p { display:none; }
+}
+@media(max-width:900px) and (min-width:761px) {
+ #ibf-home.ibf-cinema-home .ibf-brand { font-size:18px; }
+ #ibf-home.ibf-cinema-home .ibf-nav { gap:16px;font-size:11px; }
+ #ibf-home.ibf-cinema-home .ibf-logo { transform:scale(.85);width:54px;margin-right:-5px; }
+ #ibf-home.ibf-cinema-home .ibf-header { gap:16px; }
+ #ibf-home.ibf-cinema-home .ibf-intro { flex-direction:column;align-items:flex-start;gap:10px; }
+ #ibf-home.ibf-cinema-home .ibf-intro-note br { display:none; }
+ #ibf-home.ibf-cinema-home .ibf-hero-caption { align-items:flex-start; }
+ #ibf-home.ibf-cinema-home .ibf-hero-reviewers { max-width:185px; }
+ #ibf-home.ibf-cinema-home .ibf-film-grid { gap:14px; }
+ #ibf-home.ibf-cinema-home .ibf-film-card h3 { font-size:12px; }
+}
+@media(max-width:760px) {
+ #ibf-home.ibf-cinema-home .ibf-theatre { background-size:100% 100%;background-position:center top;background-color:#420e14; }
+ #ibf-home.ibf-cinema-home .ibf-topbar { width:calc(100% - 32px); }
+ #ibf-home.ibf-cinema-home .ibf-header { padding:10px 5px;gap:7px;min-height:72px;background:#451116e8; }
+ #ibf-home.ibf-cinema-home .ibf-brand { font-size:19px;gap:8px; }
+ #ibf-home.ibf-cinema-home .ibf-brand-name { white-space:normal;max-width:140px;line-height:1.2; }
+ #ibf-home.ibf-cinema-home .ibf-logo { transform:scale(.85);transform-origin:left center;width:54px;margin-right:-5px; }
+ #ibf-home.ibf-cinema-home .ibf-search-toggle { border:0;padding:8px;width:38px;margin-left:auto; }
+ #ibf-home.ibf-cinema-home .ibf-mobile-toggle { width:38px; }
+ #ibf-home.ibf-cinema-home .ibf-stage { width:calc(100% - 40px);padding:27px 0 28px; }
+ #ibf-home.ibf-cinema-home .ibf-intro { flex-direction:column;align-items:flex-start;gap:12px;padding-bottom:22px; }
+ #ibf-home.ibf-cinema-home .ibf-eyebrow { font-size:9px;letter-spacing:2.2px; }
+ #ibf-home.ibf-cinema-home h1 { font-size:clamp(32px,7.8vw,48px);letter-spacing:-1.4px;line-height:1.15;max-width:600px; }
+ #ibf-home.ibf-cinema-home .ibf-intro-note { font-size:13px;line-height:1.55; }
+ #ibf-home.ibf-cinema-home .ibf-showcase { grid-template-columns:1fr;gap:30px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-image { border-width:5px;aspect-ratio:2.65; }
+ #ibf-home.ibf-cinema-home .ibf-hero-caption { flex-wrap:wrap;gap:14px;padding-top:12px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-caption h2 { font-size:25px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-caption p { font-size:11px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-reviewers { font-size:11px;justify-content:flex-start;width:100%;gap:12px; }
+ #ibf-home.ibf-cinema-home .ibf-hero-reviewers .ibf-text-link { margin-left:auto; }
+ #ibf-home.ibf-cinema-home .ibf-ticket { width:min(100% - 24px,380px);margin:0 auto;align-self:start; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-inner { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);column-gap:14px;text-align:left;padding:12px;align-items:center; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-label { grid-column:1/-1;text-align:center;font-size:9px;margin-bottom:12px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-picture { grid-column:1;grid-row:2/5;width:100%;max-height:none;margin:0; }
+ #ibf-home.ibf-cinema-home .ibf-ticket h2 { grid-column:2;font-size:17px;margin:0;align-self:end; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-caption { grid-column:2;font-size:11px;margin-top:6px;align-self:start; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-button { grid-column:2;font-size:10px;margin-top:9px;padding:8px 4px; }
+ #ibf-home.ibf-cinema-home .ibf-ticket-stub { font-size:8px;padding:10px 0; }
+ #ibf-home.ibf-cinema-home .ibf-section-inner,#ibf-home.ibf-cinema-home .ibf-footer-wrap { width:calc(100% - 40px); }
+ #ibf-home.ibf-cinema-home .ibf-archive { padding-top:25px;padding-bottom:26px; }
+ #ibf-home.ibf-cinema-home .ibf-section-heading { align-items:baseline;flex-wrap:wrap;gap:14px;margin-bottom:18px; }
+ #ibf-home.ibf-cinema-home .ibf-section-heading h2 { font-size:28px; }
+ #ibf-home.ibf-cinema-home .ibf-filters { width:100%;gap:4px; }
+ #ibf-home.ibf-cinema-home .ibf-filters button { min-height:44px;padding:7px 11px;font-size:12px; }
+ #ibf-home.ibf-cinema-home .ibf-film-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px; }
+ #ibf-home.ibf-cinema-home .ibf-poster-link { border-width:3px; }
+ #ibf-home.ibf-cinema-home .ibf-film-card h3 { font-size:14px;min-height:0;line-height:1.4;margin-top:8px; }
+ #ibf-home.ibf-cinema-home .ibf-card-meta { font-size:10px;line-height:1.6;min-height:0; }
+ #ibf-home.ibf-cinema-home .ibf-card-scores { font-size:10px;gap:5px 10px;margin-top:6px; }
+ #ibf-home.ibf-cinema-home .ibf-card-read { font-size:11px;min-height:30px;align-items:center;margin-top:2px; }
+ #ibf-home.ibf-cinema-home .ibf-genre-shelf { padding:25px 0 28px; }
+ #ibf-home.ibf-cinema-home .ibf-section-heading .ibf-text-link { margin-left:auto; }
+ #ibf-home.ibf-cinema-home .ibf-shelf-comedy .ibf-shelf-content { grid-template-columns:1fr;gap:25px; }
+ #ibf-home.ibf-cinema-home .ibf-shelf-comedy .ibf-film-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px; }
+ #ibf-home.ibf-cinema-home .ibf-small-collection { grid-template-columns:1fr;gap:18px; }
+ #ibf-home.ibf-cinema-home .ibf-small-collection>.ibf-film-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ #ibf-home.ibf-cinema-home .ibf-collection-note { padding:22px 0 4px;margin:0;border-bottom:0; }
+ #ibf-home.ibf-cinema-home .ibf-collection-note h3 { font-size:24px; }
+ #ibf-home.ibf-cinema-home .ibf-collection-motif { display:none; }
+ #ibf-home.ibf-cinema-home .ibf-night-note { margin:5px 4px;padding:28px 25px; }
+ #ibf-home.ibf-cinema-home .ibf-night-note h3 { font-size:25px; }
+ #ibf-home.ibf-cinema-home .ibf-night-note p { font-size:14px; }
+ #ibf-home.ibf-cinema-home .ibf-about { grid-template-columns:1fr;min-height:0; }
+ #ibf-home.ibf-cinema-home .ibf-about-copy { padding:28px 20px; }
+ #ibf-home.ibf-cinema-home .ibf-about h2 { font-size:38px;letter-spacing:-1.2px; }
+ #ibf-home.ibf-cinema-home .ibf-about-copy>p:not(.ibf-eyebrow) { font-size:15px; }
+ #ibf-home.ibf-cinema-home .ibf-about-image { height:auto;max-height:300px;aspect-ratio:1.9;width:100%; }
+ #ibf-home.ibf-cinema-home .ibf-footer { flex-wrap:wrap;gap:20px;padding:22px 0; }
+ #ibf-home.ibf-cinema-home .ibf-footer-brand { font-size:18px; }
+ #ibf-home.ibf-cinema-home .ibf-footer nav { order:3;width:100%;gap:12px 22px; }
+ #ibf-home.ibf-cinema-home .ibf-footer nav a { min-height:35px;display:inline-flex;align-items:center; }
+ #ibf-home.ibf-cinema-home .ibf-seats { width:60px;height:40px;margin-left:auto; }
+ #ibf-home.ibf-cinema-inner .ibf-header { padding-inline:8px; }
+ #ibf-home.ibf-cinema-inner .ibf-brand-name { max-width:150px;white-space:normal;line-height:1.2; }
+}
+@media(prefers-reduced-motion:no-preference) {
+ #ibf-home.ibf-cinema-home :is(.ibf-ticket-button,.ibf-solid-button,.ibf-filters button) { transition:background-color .18s,color .18s; }
+}
